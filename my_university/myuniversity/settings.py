@@ -11,10 +11,9 @@ SESSION_SERIALIZER = (
     "myuniversity.serializers.PickleSerializer"  # Is it always safe to use PickleSerializer?)
 )
 
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ['*']
 
 INSTALLED_APPS = [
     "django.contrib.admin",
