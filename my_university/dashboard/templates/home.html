@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<main class="flex-1 overflow-y-auto p-4">
+    <div class="flex">
+        <h1>{{user.asdasd}}</h1>
+        <!-- Left Column -->
+        <div class="w-1/2 pr-4">
+            <div class="bg-white p-4 shadow">
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <div class="font-bold">Faculty</div>
+                        <div>Факультет компьютерных и инженерных наук</div>
+                    </div>
+                    <div>
+                        <div class="font-bold">Education form</div>
+                        <div>{{ user.education_form }}</div>
+                    </div>
+                    <div>
+                        <div class="font-bold">Speciality code</div>
+                        <div>09.03.01</div>
+                    </div>
+                    <div>
+                        <div class="font-bold">Speciality</div>
+                        <div>Информатика и вычислительная техника</div>
+                    </div>
+                    <div>
+                        <div class="font-bold">Field of study</div>
+                        <div>Анализ данных и искусственный интеллект</div>
+                    </div>
+                    <div>
+                        <div class="font-bold">Course</div>
+                        <div>Первый</div>
+                    </div>
+                    <div>
+                        <div class="font-bold">Group</div>
+                        <div>B23-DSAI-04</div>
+                    </div>
+                    <div>
+                        <div class="font-bold">Overall GPA</div>
+                        <div>{{ user.gpa }}</div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4 bg-white p-4 shadow">
+                <div class="font-bold mb-2">Student HandBook</div>
+                <div class="text-blue-600 cursor-pointer">Open website</div>
+                <div class="font-bold mt-4 mb-2">FAQ</div>
+                <div class="text-blue-600 cursor-pointer">Open website</div>
+                <div class="font-bold mt-4 mb-2">Contacts</div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <div>Mail</div>
+                        <div class="text-blue-600 cursor-pointer">igor.kuzmenkov.05@mail.ru</div>
+                    </div>
+                    <div>
+                        <div>Telegram</div>
+                        <div class="text-blue-600 cursor-pointer">@igorduino</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="w-1/2 pl-4">
+            <div class="bg-white p-4 shadow">
+                <div class="flex items-center justify-between mb-4">
+                    <div class="text-gray-700">{{ user.email }}</div>
+                    <div class="text-purple-600 cursor-pointer">VIEW YOUR PERSONAL INFO</div>
+                </div>
+                <div class="text-center">
+                    <img src="https://placehold.co/100x100" alt="Profile image of {{ user.full_name }}" class="rounded-full mx-auto mb-4">
+                    <div class="font-bold">{{ user.full_name }}</div>
+                    <div class="text-gray-600">Welcome to dashboard!</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock %}
+

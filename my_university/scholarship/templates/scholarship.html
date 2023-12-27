@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<div class="flex justify-center items-center h-full">
+    <div class="w-full max-w-xs">
+        <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+            <div class="flex justify-center mb-4">
+                <img src="{% static 'img/scholarship_formula.png' %}" alt="Scholarship Image" class="rounded">
+            </div>
+            <div class="mb-4">
+                <p class="text-center text-gray-700 text-xl font-bold mb-2">Your scholarship is</p>
+                <p class="text-center text-gray-700 text-5xl font-bold mb-2">{{ scholarship }}</p>
+            </div>
+            <div class="flex items-center justify-between">
+                <a href="/scholarship" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Calculate again</a>
+            </div>
+    </div>
+</div>
+{% endblock %}
