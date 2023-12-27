@@ -11,7 +11,7 @@ SESSION_SERIALIZER = (
     "myuniversity.serializers.PickleSerializer"  # Is it always safe to use PickleSerializer?)
 )
 
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
